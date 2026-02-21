@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redactor Judicial de Élite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+    <!-- PDF.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+        /* Estilos específicos para la previsualización del documento */
+        .judicial-preview {
+            background-color: white;
+            min-height: 842px; /* Aprox A4 ratio */
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding: 40px 60px;
+            margin: 0 auto;
+            border: 1px solid #e2e8f0;
+        }
+        
+        /* Forzar estilos del contenido generado */
+        .judicial-preview * {
+            font-family: 'Times New Roman', Times, serif !important;
+            font-size: 12pt !important;
+            line-height: 1.15 !important;
+            color: #1a1a1a;
+        }
+
+        .judicial-preview p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .judicial-preview strong {
+            font-weight: bold;
+        }
+
+        /* Scrollbar personalizado para el área de previsualización */
+        .preview-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .preview-container::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .preview-container::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .preview-container::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "LexRedactor: IA Judicial",
+  "description": "Asistente de redacción jurídica avanzado que procesa escritos de litigantes y genera borradores de resoluciones judiciales siguiendo formatos institucionales estrictos.",
+  "requestFramePermissions": []
+}
